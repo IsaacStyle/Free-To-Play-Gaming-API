@@ -1,7 +1,10 @@
 import mongoose from 'mongoose'
 
 const GamesSchema = new mongoose.Schema({
-    id: Number,
+    id: { 
+    type: Number,
+    required: false,
+    },
     title: String,
     thumbnail: String,
     short_description: String,
