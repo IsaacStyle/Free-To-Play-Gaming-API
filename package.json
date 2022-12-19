@@ -1,5 +1,5 @@
 {
-  "name": "burger-api",
+  "name": "f2pgames-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^6.8.0"
+    "fetch": "^1.1.0",
+    "mongoose": "^6.8.0",
+    "node-fetch": "^3.3.0"
   },
-  "type":"module"
+  "type": "module"
 }
