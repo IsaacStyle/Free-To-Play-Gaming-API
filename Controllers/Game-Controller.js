@@ -14,6 +14,86 @@ export const getGameId = async (req, res) => {
   try {
     const { id } = req.params;
     const games = await Games.findById(id);
+    
+    if (games) {
+      return res.json(games);
+    }
+
+    res.status(404).json({ message: "Game not found!" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getGameTitle = async (req, res) => {
+  try {
+    const { title } = req.params;
+    const games = await Games.findOne({'title': title});
+
+    if (games) {
+      return res.json(games);
+    }
+
+    res.status(404).json({ message: "Game not found!" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getGamesGenre = async (req, res) => {
+  try {
+    const { genre } = req.params;
+    const games = await Games.find({'genre': genre});
+
+    if (games) {
+      return res.json(games);
+    }
+
+    res.status(404).json({ message: "Game not found!" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getGamesPlatform = async (req, res) => {
+  try {
+    const { platform } = req.params;
+    const games = await Games.find({'platform': platform});
+
+    if (games) {
+      return res.json(games);
+    }
+
+    res.status(404).json({ message: "Game not found!" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getGamesPublisher = async (req, res) => {
+  try {
+    const { publisher } = req.params;
+    const games = await Games.find({'publisher': publisher});
+
+    if (games) {
+      return res.json(games);
+    }
+
+    res.status(404).json({ message: "Game not found!" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getGamesDeveloper = async (req, res) => {
+  try {
+    const { developer } = req.params;
+    const games = await Games.find({'developer': developer});
 
     if (games) {
       return res.json(games);
