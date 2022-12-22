@@ -1,14 +1,14 @@
-import { Router } from "express";
+import { Router } from "express"
 import express from 'express'
-import gRoute from "./Game-Route.js";
+import gRoute from "./Game-Route.js"
 
-const router = Router();
+const router = Router()
 router.use(express.json())
 
 // router.get("/", (req, res) => {
-//   res.redirect('api');
-// });
+//   res.redirect('api')
+// })
 
-router.use("/", gRoute);
+router.use("/", gRoute)
 
-export default router;
+export default router

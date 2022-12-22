@@ -28,10 +28,10 @@ The entire games list can be requested with the default path of '/'.
     '/id/:id-value'
     '/title/:title-name'
 ##### Search for a collection of games by specific attributes
-    '/genre/:genre-name'
-    '/platform/:platform-name'
-    '/publisher/:publisher-name'
-    '/developer/:developer-name'
+    Search games by Genre '/genre/:genre-name' 
+    Search Games by platform '/platform/:platform-name'
+    Search games by publisher '/publisher/:publisher-name'
+    Search games by developer '/developer/:developer-name'
 ##### Post request by Id
     '/:id-value'
 ##### Put request by Id
