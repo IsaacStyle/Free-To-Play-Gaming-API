@@ -20,9 +20,15 @@ let updatedData = data.map(item => {
 
 })
 
-Games
-    .deleteMany()
-    .then(() => Games.create(updatedData))
-    .then(() => console.log('Games added to database'))
-    .catch(err => console.error("Failed", err))
-    .then(() => mongoose.disconnect())
+let seedGames = async() => {
+    try {
+        await Games.create(updatedData)
+    } 
+    catch (err) {
+        console.error("Failed", err)
+    }
+    console.log('Games added to database')
+    mongoose.disconnect()
+}
+
+seedGames()
