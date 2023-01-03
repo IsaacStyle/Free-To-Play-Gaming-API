@@ -27,11 +27,16 @@ The entire games list can be requested with the default path of '/'.
 ##### Search for specific games by id or title
     '/id/:id-value'
     '/title/:title-name'
+##### Search random games
+    '/random'
+    '/random10'
 ##### Search for a collection of games by specific attributes
     Search games by Genre '/genre/:genre-name' 
     Search Games by platform '/platform/:platform-name'
     Search games by publisher '/publisher/:publisher-name'
     Search games by developer '/developer/:developer-name'
+##### Search for games through Query
+    '/Games?<key>=<value>
 ##### Post request by Id
     '/:id-value'
 ##### Put request by Id
