@@ -10,7 +10,6 @@ let app = express()
 
 app.use(express.json())
 app.use('/', routes)
-app.use(cors())
 app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*')
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE')
@@ -18,6 +17,7 @@ app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Credentials', true)
     next()
 })
+app.use(cors())
 
 connection.on("connected", () => {
     console.clear()
