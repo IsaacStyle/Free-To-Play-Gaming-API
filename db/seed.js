@@ -1,4 +1,3 @@
-import mongoose from "mongoose"
 import connection from "../connection.js"
 import Games from "../models/Games.js"
 import data from "./games.json" assert {type:'json'}
@@ -23,12 +22,12 @@ let updatedData = data.map(item => {
 let seedGames = async() => {
     try {
         await Games.create(updatedData)
+        console.log('Games added to database')
+        connection.close()
     } 
     catch (err) {
         console.error("Failed", err)
     }
-    console.log('Games added to database')
-    mongoose.disconnect()
 }
 
 seedGames()
