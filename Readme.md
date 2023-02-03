@@ -1,5 +1,6 @@
 # Free To Play Games API
 The following is an API of Free to Play Video Games with full CRUD functionality.
+(Deployed Link)[https://free-to-play-gaming-api-production.up.railway.app/]
 
 ## Getting Started
 The dependencies required for this project are the following.
