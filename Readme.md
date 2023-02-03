@@ -1,5 +1,6 @@
 # Free To Play Games API
 The following is an API of Free to Play Video Games with full CRUD functionality.
+
 https://free-to-play-gaming-api-production.up.railway.app/
 
 ## Getting Started
