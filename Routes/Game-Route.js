@@ -31,4 +31,5 @@ router.put("/:id", controller.updateGame)
 
 router.delete("/:id", controller.deleteGame)
 
+
 export default router
