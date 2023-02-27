@@ -38,13 +38,13 @@ The entire games list can be requested with the default path of '/'.
     Search games by publisher '/publisher/:publisher-name'
     Search games by developer '/developer/:developer-name'
 ##### Search for games through Query
-    '/Games?<key>=<value>
+    '/Games?<key>=<value>'
 ##### Post request by Id
     '/:id-value'
 ##### Put request by Id
     '/:id-value'
 ##### Delete request by Id
-    '/:id-value
+    '/:id-value'
 
 
 
