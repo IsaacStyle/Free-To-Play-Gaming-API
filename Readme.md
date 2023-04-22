@@ -1,7 +1,8 @@
 # Free To Play Games API
 The following is an API of Free to Play Video Games with full CRUD functionality.
 
-https://free-to-play-gaming-api-production.up.railway.app/
+Deployed Api - https://free-to-play-gaming-api-production.up.railway.app/
+Retool Front End - https://isaacstyle.retool.com/embedded/public/d02a94ee-d6bf-4373-80dc-326c9d232675
 
 ## Getting Started
 The dependencies required for this project are the following.
